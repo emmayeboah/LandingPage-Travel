@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -129,7 +130,7 @@ section
   font-weight: 600;
   color: #fff;
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .text
@@ -146,7 +147,8 @@ section
   min-height: 500px;
 }
 
-.banner2
+.banner2,
+.banner3
 {
   position: relative;
   width: 100%;
@@ -156,7 +158,9 @@ section
   align-items: center;
 }
 
-.banner2:before
+.
+.banner2::before,
+.banner3::before
 {
   content: "";
   position: absolute;
@@ -168,7 +172,8 @@ section
   background: linear-gradient(to top, #111, transparent);
 }
 
-.banner2::after
+.banner2::after,
+.banner3::after
 {
   content: "";
   position: absolute;
@@ -203,14 +208,14 @@ section
 .destination .destinationList .box
 {
   position: relative;
-  min-width: 350px;
-  height: 480px;
+  min-width: 300px;
+  height: 450px;
   background: #191919;
   transition: 0.5s;
   margin: 10px;
 }
 
-.destination .destionation:hover .box
+.destination .destinationList:hover .box
 {
   opacity: 0.2;
 }
@@ -218,4 +223,81 @@ section
 .destionation .destinationList .box:hover
 {
   opacity: 1;
+}
+
+.destionation .destinationList .box .imgBx
+{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.destination .destinationList .box .content
+{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination .destinationList .box content h2
+{
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.destination .destinationList .box .content h2 span
+{
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer .sci
+{
+  position: relative;
+  display: flex;
+}
+
+.footer .sci li
+{
+  list-style: none;
+}
+
+.footer .sci li a
+{
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.footer .sci li a img
+{
+  filter: invert(1);
+  max-width: 40px;
+}
+
+.copyrightText
+{
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+}
+
+.copyrightText a
+{
+  color: #fff;
+  text-decoration: none;
 }
